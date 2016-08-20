@@ -195,7 +195,7 @@ PVideoFrame Deblock::GetFrame(int n, IScriptEnvironment *env) {
 
 AVSValue __cdecl Create_Deblock(AVSValue args, void*, IScriptEnvironment* env) {
     enum { CLIP, QUANT, AOFFSET, BOFFSET };
-    return new Deblock(args[CLIP].AsClip(), args[QUANT].AsInt(25), args[AOFFSET].AsInt(0), args[BOFFSET].AsBool(0), env);
+    return new Deblock(args[CLIP].AsClip(), args[QUANT].AsInt(25), args[AOFFSET].AsInt(0), args[BOFFSET].AsInt(0), env);
 }
 
 
